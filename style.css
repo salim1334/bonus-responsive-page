@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+.main-wrapper {
+  max-width: 800px;
+  margin: auto;
+}
+
+header {
+  height: 110px;
+  background-color: #ed1c24;
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+  border: 3px solid black;
+}
+
+.nav-bar {
+  width: 85%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.lists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  list-style: none;
+}
+
+.lists li {
+  border: 3px solid black;
+  flex: 1;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: bold;
+  font-size: clamp(16px, 1.2vw, 25px);
+}
+
+.lists .list-hide {
+  display: none;
+}
+
+.design {
+  display: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.light-green-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffc90e;
+  margin: 0 10px;
+  border: 3px solid black;
+  height: 200px;
+}
+
+.light-green-container div {
+  width: 45%;
+  height: 90%;
+  background-color: #b5e61d;
+  border: 3px solid black;
+}
+
+.grey-wrapper {
+  width: 65%;
+  height: 290px;
+  border: 3px solid black;
+  margin: 20px auto 30px;
+}
+
+.gray-container-one {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gray-container-one div {
+  width: 75%;
+  height: 230px;
+  background-color: #c3c3c3;
+  border: 3px solid black;
+}
+
+.gray-container-two {
+  display: none;
+}
+
+footer {
+  height: 150px;
+  max-width: 1000px;
+  border: 3px solid black;
+  background-color: #99d9ea;
+  height: 75px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.foot-right-align {
+  text-align: right;
+}
+
+.left-foot {
+  margin: auto;
+}
+
+.right-foot {
+  display: none;
+}
+
+@media (min-width: 550px) {
+  header {
+    background-color: #ff7f27;
+    border: none;
+    margin-bottom: 0;
+  }
+
+  .nav-bar {
+    width: 96%;
+  }
+
+  .lists .list-hide {
+    display: block;
+  }
+
+  .lists li {
+    border: 5px solid #00a2e8;
+    padding: 13px 0;
+  }
+
+  .design {
+    display: block;
+    width: 55%;
+    margin: 10px auto 20px;
+    text-align: center;
+    border: 5px solid #ffaec9;
+    padding: 5px 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .main {
+    background-color: #ffc90e;
+    padding: 13px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    height: 115vh;
+  }
+
+  .main div {
+    flex: 1;
+    gap: 15px;
+  }
+
+  .light-green-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #ffc90e;
+    margin: 0;
+    border: 5px solid #b5e61d;
+    padding: 10px 7px;
+    background-color: #fff;
+    height: 100%;
+  }
+
+  .light-green-container div {
+    width: 100%;
+    height: 100%;
+    background-color: #b5e61d;
+    border: none;
+  }
+
+  .grey-wrapper {
+    width: 65%;
+    height: 100%;
+    border: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  } 
+
+  .grey-wrapper div {
+    flex: 1;
+  }
+
+  .gray-container-one {
+    background-color: red;
+  }
+
+  .gray-container-one {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 5px solid #c3c3c3;
+    padding-top: 5%;
+    /* padding: 0 40px; */
+  }
+
+  .gray-container-one div {
+    width: 60%;
+    margin: auto;
+    height: 95%;
+    background-color: #c3c3c3;
+    border: none;
+  }
+
+  .gray-container-two {
+    display: block;
+    border: 5px solid #c3c3c3;
+    background-color: #fff;
+    padding: 4%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .gray-container-two div {
+    background-color: #c3c3c3;
+  }
+
+  .gray-container-two .grey-one {
+    flex: 1.2;
+    height: 100%;
+    width: 60%;
+  }
+
+  footer {
+    height: 16vh;
+    border: none;
+    text-align: left;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 0 25px;
+    font-weight: 550;
+  }
+
+  footer div {
+    width: 30%;
+  }
+
+  .foot-right-align {
+    text-align: left;
+  }
+
+  .left-foot {
+    margin: 0;
+  }
+
+  .right-foot {
+    display: block;
+  }
+
+  .foot-block-text {
+    display: block;
+  }
+}
